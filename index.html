@@ -15,25 +15,25 @@
     <main>
         <div id="visor"><p id="valor" class="txt-laranja">0</p></div>
         <div id="botoes">
-            <button class="botao txt-branco">C</button>
-            <button class="botao txt-branco"><i class="fa-solid fa-delete-left"></i></button>
-            <button class="botao txt-branco">&percnt;</button>
-            <button class="botao txt-laranja">&divide;</button>
-            <button class="botao txt-branco">7</button>
-            <button class="botao txt-branco">8</button>
-            <button class="botao txt-branco">9</button>
-            <button class="botao txt-laranja"><i class="fa-solid fa-xmark"></i></button>
-            <button class="botao txt-branco">4</button>
-            <button class="botao txt-branco">5</button>
-            <button class="botao txt-branco">6</button>
-            <button class="botao txt-laranja">-</button>
-            <button class="botao txt-branco">1</button>
-            <button class="botao txt-branco">2</button>
-            <button class="botao txt-branco">3</button>
-            <button class="botao txt-laranja">+</button>
-            <button class="botao txt-branco">0</button>
-            <button class="botao txt-branco">,</button>
-            <button class="botao" id="b-igual">=</button>
+            <button class="botao txt-branco" onclick="Clear()">C</button>
+            <button class="botao txt-branco" onclick="Backspace()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="botao txt-branco" onclick="AddOperador('//')">&percnt;</button>
+            <button class="botao txt-laranja" onclick="AddOperador('/')">&divide;</button>
+            <button class="botao txt-branco" onclick="AddValor(7)">7</button>
+            <button class="botao txt-branco" onclick="AddValor(8)">8</button>
+            <button class="botao txt-branco" onclick="AddValor(9)">9</button>
+            <button class="botao txt-laranja" onclick="AddOperador('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button class="botao txt-branco" onclick="AddValor(4)">4</button>
+            <button class="botao txt-branco" onclick="AddValor(5)">5</button>
+            <button class="botao txt-branco" onclick="AddValor(6)">6</button>
+            <button class="botao txt-laranja" onclick="AddOperador('-')">-</button>
+            <button class="botao txt-branco" onclick="AddValor(1)">1</button>
+            <button class="botao txt-branco" onclick="AddValor(2)">2</button>
+            <button class="botao txt-branco" onclick="AddValor(3)">3</button>
+            <button class="botao txt-laranja" onclick="AddOperador('+')">+</button>
+            <button class="botao txt-branco" onclick="AddValor(0)">0</button>
+            <button class="botao txt-branco" onclick="AddOperador(',')">,</button>
+            <button class="botao" id="b-igual" onclick="Resultado()">=</button>
         </div>
     </main>
     <footer>
